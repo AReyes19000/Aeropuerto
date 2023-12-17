@@ -1,0 +1,91 @@
+/* CONTENIDO */
+
+main {
+	width: 100%;
+	max-width: 1560px;
+	margin: auto;
+	padding-bottom: 100px;
+}
+
+.hotel {
+	height: 450px;
+	padding: 20px 6px;
+	margin-bottom: 20px;
+	outline: 5px solid transparent;
+	outline-offset: -2px;
+	border-radius: 10px;
+	float: left;
+	cursor: context-menu;
+	overflow: hidden;
+
+	transition-property: background-color color outline;
+	transition-duration: .2s;
+}
+.hotel img {
+	width: 100%;
+	height: 250px;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+}
+.hotel p {
+	width: 100%;
+	height: 100px;
+	overflow: auto;
+}
+.reservar::before { content: 'Reservar'; }
+.comentarios::before { content: 'Mostrar Comentarios'; }
+.reservar, .comentarios {
+	position: relative;
+	margin: 5px;
+	font-size: 22px;
+	color: var(--texto);
+	background-color: var(--fondo);
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	opacity: 0;
+}
+.reservar {
+	top: -155px;
+	float: left;
+}
+.comentarios {
+	top: -155px;
+	float: right;
+}
+.estrellas {
+	position: relative;
+	top: -375px;
+	font-size: 12px;
+	text-align: center;
+	opacity: 0;
+}
+
+/* TRANSICIONES */
+
+.hotel:hover {
+	background-color: var(--fondo-2);
+	color: var(--texto-2);
+	outline: 5px solid var(--outline);
+}
+.reservar:hover {
+	background-color: limegreen;
+	color: var(--texto-2);
+}
+.comentarios:hover {
+	background-color: var(--fondo-2);
+	color: var(--texto-2);
+}
+.hotel:hover .reservar, .hotel:hover .comentarios, .hotel:hover .estrellas {
+	opacity: 1;
+}
+
+/* SCROLL */ 
+
+.hotel p::-webkit-scrollbar {
+	width: 10px;
+}
+.hotel p::-webkit-scrollbar-thumb {
+	background-color: var(--fondo);
+	border-radius: 10px;
+}

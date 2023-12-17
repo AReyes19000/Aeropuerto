@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A/H</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <style>
+      body {
+        background-image: url("imagenes/hoteles.jpg");
+        background-size: cover;
+        overflow-y: hidden;
+      }
+      nav {
+        animation: bajar 0.5s 0.75s backwards;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        animation: subir 0.5s 0.75s backwards;
+      }
+      @keyframes subir {
+        from {
+          transform: translateY(200px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      @keyframes bajar {
+        from {
+          transform: translateY(-100px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Aeropuertos.html">Aeropuertos</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Ayuda</a></li>
+        <li class="login"><a href="registrarse/index.html">Registrarse</a></li>
+      </ul>
+    </nav>
+
+    <br /><br /><br /><br />
+    <h1>¿Quieres viajar? Tenemos muchas opciones para ti</h1>
+    <form id="busqueda-hotel">
+      <ul>
+        <li>
+          <label for="donde-ir">Donde ir</label>
+          <input
+            type="text"
+            id="donde-ir"
+            name="donde-ir"
+            size="34"
+            placeholder="Provincia, ciudad, región..."
+            required
+          />
+        </li>
+        <li>
+          <label for="entrada">Horarios</label>
+          <input type="date" id="entrada" name="entrada" required />
+        </li>
+        <li>
+          <label for="habitaciones">Asientos</label>
+          <select name="habitaciones" id="habitaciones">
+            <option value="1-1h">1 adulto, 1 asiento</option>
+            <option value="2-1h">2 adultos, 1 asiento</option>
+            <option value="1-1n">1 adulto, 1 niño</option>
+            <option value="2-1n">2 adultos, 1 niño</option>
+            <option value="2-2n">2 adultos, 2 niños</option>
+          </select>
+        </li>
+        <li><input type="submit" value="Buscar" /></li>
+      </ul>
+    </form>
+    <br />
+    <h2>Escoje el destino que siempre has soñado</h2>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="terminos/terminos-y-condiciones.html"
+            >Términos y Condiciones</a
+          >
+        </li>
+        <li>
+          <a href="terminos/politica-de-privacidad.html"
+            >Política de Privacidad</a
+          >
+        </li>
+        <li><a href="terminos/cookies.html">Cookies</a></li>
+      </ul>
+      <p>© MundoHoteles.com Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

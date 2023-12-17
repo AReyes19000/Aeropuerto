@@ -1,0 +1,12 @@
+footer {
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	background-color: var(--fondo-2);
+}
+footer ul, footer p {
+	width: 500px;
+	padding: 10px 0;
+	text-align: center;
+	margin: auto;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoteles</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Aeropuertos.html">Aeropuertos</a></li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Ayuda</a></li>
+          <li class="login">
+            <a href="registrarse/index.html">Registrarse</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form id="busqueda-hotel">
+        <ul>
+          <li>
+            <label for="donde-ir">Donde ir</label>
+            <input
+              type="text"
+              id="donde-ir"
+              name="donde-ir"
+              size="34"
+              placeholder="Provincia, ciudad, región, hotel..."
+              required
+            />
+          </li>
+          <li>
+            <label for="entrada">Entrada</label>
+            <input type="date" id="entrada" name="entrada" required />
+          </li>
+          <li>
+            <label for="salida">Salida</label>
+            <input type="date" id="salida" name="salida" required />
+          </li>
+          <li>
+            <label for="habitaciones">Habitaciones</label>
+            <select name="habitaciones" id="habitaciones">
+              <option value="1-1h">1 adulto, 1 habitación</option>
+              <option value="2-1h">2 adultos, 1 habitación</option>
+              <option value="1-1n">1 adulto, 1 niño</option>
+              <option value="2-1n">2 adultos, 1 niño</option>
+              <option value="2-2n">2 adultos, 2 niños</option>
+            </select>
+          </li>
+          <li><input type="submit" value="Buscar" /></li>
+        </ul>
+      </form>
+    </header>
+
+    <main>
+      <div class="hotel col-2 col-3">
+        <h1>Hard Rock Hotel tenerife</h1>
+        <img
+          src="imagenes/hard-rock-hotel-tenerife.jpg"
+          alt="Hard Rock Hotel tenerife"
+        />
+        <p>
+          Hotel de lujo en San Miguel de Abona con 2 bares con salón y piscina
+          al aire libre, Urbanización Golf del Sur s/n, San Miguel de Abona,
+          Tenerife. 38620.
+        </p>
+        <a href="hard-rock-hotel-tenerife.html" class="reservar"></a>
+        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="hotel col-2 col-3">
+        <h1>Iberostar Heritage Grand Mencey</h1>
+        <img
+          src="imagenes/iberostar-heritage-grand-mencey.png"
+          alt="Iberostar Heritage Grand Mencey"
+        />
+        <p>
+          Hotel de lujo en Santa Cruz de Tenerife con 4 restaurantes y 2 bares
+          con salón, Calle Doctor Jose Naveiras, 38, Santa Cruz de Tenerife,
+          Tenerife, 38004.
+        </p>
+        <a class="reservar" href="Iberostar-Heritage-Grand-Mencey.html"></a>
+        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="hotel col-2 col-3">
+        <h1>Landmar Costa Los Gigantes</h1>
+        <img
+          src="imagenes/landmar-costa-los-gigantes.png"
+          alt="Landmar Costa Los Gigantes"
+        />
+        <p>
+          Complejo de 4 estrellas con parque acuático gratuito, cerca de Playa
+          de la Arena, Calle Juan Manuel Capdevielle, 8, Puerto de Santiago,
+          Santiago del Teide, Tenerife, 38683.
+        </p>
+        <a class="reservar" href="Landmar-Costa-Los-Gigantes.html"></a>
+        <div class="estrellas">⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="hotel col-2 col-3">
+        <h1>Best Western Plus Hotel Invierno</h1>
+        <img
+          src="imagenes/best-western-plus-hotel-invierno.png"
+          alt="Best Western Plus Hotel Invierno"
+        />
+        <p>
+          Hotel de 4 estrellas con spa, cerca de Termas de Diocleciano, Via
+          Principe Amedeo 5/B, Rome, RM, 185.
+        </p>
+        <a class="reservar" href="Best-Western-Plus-Hotel-Invierno.html"></a>
+        <div class="estrellas">⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="hotel col-2 col-3">
+        <h1>Hotel 77 Seventy Seven</h1>
+        <img
+          src="imagenes/hotel-77-seventy-seven.png"
+          alt="Hotel 77 Seventy Seven"
+        />
+        <p>
+          Hotel de 4 estrellas con spa completo, fácil acceso a una estación de
+          tren o metro y cerca de Via Veneto, Via Agostino De Pretis, 77, Rome,
+          Italy, 00185.
+        </p>
+        <a class="reservar" href="Hotel-77-Seventy-Seven.html"></a>
+        <div class="estrellas">⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="hotel col-2 col-3">
+        <h1>Hotel SplendideRoyal Rome</h1>
+        <img
+          src="imagenes/hotel-splendide-royal-rome.png"
+          alt="Hotel SplendideRoyal Rome"
+        />
+        <p>
+          Hotel de lujo con 2 restaurantes, cerca de Escalinata de la Plaza de
+          España, Via Di Porta Pinciana 14, Rome, RM, 187.
+        </p>
+        <a class="reservar" href="Hotel-SplendideRoyal-Rome.html"></a>
+        <div class="estrellas">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div id="paginacion">
+        <a href="">&laquo;</a>
+        <a href="" class="active">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">&raquo;</a>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="terminos/terminos-y-condiciones.html"
+            >Términos y Condiciones</a
+          >
+        </li>
+        <li>
+          <a href="terminos/politica-de-privacidad.html"
+            >Política de Privacidad</a
+          >
+        </li>
+        <li><a href="terminos/cookies.html">Cookies</a></li>
+      </ul>
+      <p>© MundoHoteles.com Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

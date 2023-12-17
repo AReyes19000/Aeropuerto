@@ -1,0 +1,19 @@
+#paginacion {
+	width: 310px;
+	margin: auto;
+	clear: both;
+}
+#paginacion a {
+	float: left;
+	padding: 8px 16px;
+	margin-right: 3px;
+	background-color: var(--fondo-2);
+	color: var(--texto-2);
+	border-radius: 10px;
+}
+#paginacion .active {
+	background-color: var(--fondo);
+}
+#paginacion a:hover {
+	transform: scale(1.1);
+}

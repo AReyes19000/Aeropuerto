@@ -1,0 +1,57 @@
+/* MENÚ DE NAVEGACIÓN */
+
+header {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	background-image: url('../imagenes/fondo-hotel.jpg');
+	background-size: cover;
+}
+nav {
+	width: 100%;
+	background-color: var(--fondo-2);
+}
+ul { margin: 0; }
+li {
+	display: inline-block;
+	padding: 10px;
+}
+li>a {
+	color: var(--texto-2);
+}
+li>a:hover {
+	color: var(--texto);
+}
+.login {
+	float: right;
+	background-color: var(--fondo-2);
+}
+
+/* MENÚ DE BÚSQUEDA */
+
+#busqueda-hotel {
+	width: 90%;
+	max-width: 1100px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 5px;
+	color: #333;
+}
+#busqueda-hotel li {
+	padding: 1px;
+}
+label { display: block; }
+input, select {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+[type="submit"] {
+	padding: 5px;
+	background-color: dodgerblue;
+	color: var(--texto-2);
+	text-transform: uppercase;
+	cursor: pointer;
+}

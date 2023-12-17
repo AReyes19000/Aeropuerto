@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Alumni Sans Pinstripe');
+
+/* VARIABLES */ 
+
+:root {
+	--fondo: #f9f9f9;
+	--fondo-2: rgba(20,20,20,.8);
+	--texto: #666;
+	--texto-2: #eee;
+	--outline: #ddd;
+}
+
+/* ESTILO GENERAL */
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+	animation: mostrar 2.5s both;
+}
+*,*::before,*::after {
+	box-sizing: inherit;
+}
+body {
+	margin: 0;
+	height: 100%;
+	background-color: var(--fondo);
+	color: var(--texto);
+	font-family: "Alumni Sans Pinstripe", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+h1,h2 {
+	font-size: 32px;
+	margin: 0;
+	margin-top: -5px;
+	padding: 10px;
+	text-align: center;	
+}
+h2 { font-size: 28px; }
+p {
+	padding: 10px;
+	margin: 0;
+	color: #aaa;
+}
+a {
+	text-decoration: none;
+	color: var(--texto);
+}
+img {
+	width: 100%;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+}
+
+/* ANIMACIONES */
+
+@keyframes mostrar {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}

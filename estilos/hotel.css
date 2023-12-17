@@ -1,0 +1,41 @@
+html {
+	scroll-behavior: smooth;
+}
+h1 { font-size: 2em; }
+#servicios p {
+	padding-left: 50px;
+	display: inline-block;
+	width: 48%;
+}
+#servicios p::before { content: '✓ '; }
+.imagen {
+	width: 100%;
+	height: 600px;
+	background-size: cover;
+}
+
+/* MENÚ */
+
+.menu {
+	position: sticky;
+	top: 0;
+	background-color: #333;
+	text-align: center;
+}
+
+.menu a {
+	padding: 5px;
+	margin: 5px;
+	font-size: 28px;
+}
+
+#resumen:target, #ubicacion:target, #servicios:target {
+	background-color: #333;
+	transition-duration: 1s;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+	#servicios p { width: 90%; }
+}
